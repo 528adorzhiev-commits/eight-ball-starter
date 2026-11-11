@@ -33,9 +33,10 @@ function askEightBall() {
   }
 
 //get a random number
-let eightBall = '';
-//Get the Magic 8balls answer
+
 let randomNumber = Math.floor(Math.random() * 8);
+
+//Get the Magic 8balls answer
 //Show the 8ball answer type badge
 
 let eightBall = '';
@@ -67,5 +68,9 @@ switch (randomNumber) {
   case 7:
     eightBall = 'Signs point to yes';
     break;
+}
+
+if (randomNumber === 0 || randomNumber === 1 || randomNumber === 7) {} else if (randomNumber === 2 || randomNumber === 3) {} else {
+}
 }
 
