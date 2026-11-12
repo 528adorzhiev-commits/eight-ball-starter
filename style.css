@@ -4,8 +4,8 @@
    ========================================== */
 
 :root {
-  --brand: #3b2a6b;        /* navbar, hero, button */
-  --brand-light: #ece8f6;  /* page background */
+  --brand: #ffab5c;        /* navbar, hero, button */
+  --brand-light: #ffdeb2;  /* page background */
   --accent: #f4b942;       /* step numbers, highlights */
   --text: #1f1d2b;
   --font: "Poppins", Arial, sans-serif;
