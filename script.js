@@ -68,9 +68,21 @@ switch (randomNumber) {
   case 7:
     eightBall = 'Signs point to yes';
     break;
-}
+  }
 
-if (randomNumber === 0 || randomNumber === 1 || randomNumber === 7) {} else if (randomNumber === 2 || randomNumber === 3) {} else {
+  if (randomNumber === 0 || randomNumber === 1 || randomNumber === 7) {
+    badgeClass = 'bg-success';
+    badgeText = 'Positive';
+  } else if (randomNumber === 2 || randomNumber === 3) {
+    badgeClass = 'bg-warning text-dark';
+    badgeText = 'Neutral';
+  } else {
+    badgeClass = 'bg-danger';
+    badgeText = 'Negative';
+  }
+document.getElementById('answer').textContent = eightBall;
+  document.getElementById('answerType').innerHTML = `<span class="badge ${badgeClass}">${badgeText}</span>`;
 }
+if (randomNumber === 0 || randomNumber === 1 || randomNumber === 7) {} else if (randomNumber === 2 || randomNumber === 3) {} else {
 }
 
